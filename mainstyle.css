@@ -166,14 +166,7 @@ body {
         line-height: 1.5;
         padding: 0 0 15px 0;
     }
-    
-    
-    
-    
-    
-        /* Project content > Header
-        *******************************************************************************************/
-        
+
         .project_header {
             float: right;
             margin: 5px -6px 0 0;
@@ -341,11 +334,6 @@ body {
             padding: 5px 0 5px 0;
         }
         
-        
-        
-        /* Project content > Project footer
-        *******************************************************************************************/
-    
         .project_footer {
             color: #999999;
             clear: both;
@@ -456,8 +444,8 @@ body {
     .thumb_title {
         overflow: hidden;
         white-space:nowrap;
-        text-align: left;
-        width: 200px;
+        text-align: center;
+        width: 320px;
     }
 
     .thumb_title.notag {
