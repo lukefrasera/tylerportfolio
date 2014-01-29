@@ -23,12 +23,36 @@
 		<a href="/Store" rel="history">Store</a>
 	</div>
 </div>
+
+</head>
+<body>
+
+<script src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+createHover();
+});
+function createHover() {
+$(".project_thumb").unbind('mouseenter').unbind('mouseleave'); // reset the hover to prevent doubling
+$(".project_thumb").bind("mouseenter",function() { // create hover
+$("img", this).fadeTo("fast", 0.7); // Sets the opacity to 70% on hover
+}).bind("mouseleave",function(){
+$("img", this).fadeTo("fast", 1.0); // Sets the opacity back to 100% on mouseout
+});
+$(".next_page").attr("onclick",""); // remove the pagination function
+$(".prev_page").attr("onclick",""); // remove the pagination function
+$(".next_page").click(function() { changePage((parseInt($("#current_page").val())+1),$("#limit").val()); setTimeout("createHover()",100); });
+$(".prev_page").click(function() { changePage((parseInt($("#current_page").val())-1),$("#limit").val()); setTimeout("createHover()",100); });
+}
+</script>
+
+
 <div id="content_container">
 	<div class="project_thumb" spot="-1">
 		<div id="pr_contain_item_3627900"><a href="/#" onmouseover="this.className='hover';" onmouseout="this.className='nohover';" class="nohover" id="p3627900" rel="history" name="benmaurodesign" onfocus="this.blur()">
 			<div class="loader_holder " id="load_3627900"><img src="/_gfx/loadingAnim.gif" style="opacity: 1;"></div>
 		<div class="thumb_title notag"><span class="text">Picture01</span>&nbsp;</div></a></div>
-		<div class="cardimgcrop " name=""><img src="assets/thumbnail.jpg" border="0" rel="testprt_1380728430.jpg" width="320" height="200" style="opacity: 1;">
+		<div class="cardimgcrop " name=""><img src="assets/thumbnail.jpg" border="0" rel="testprt_1380728430.jpg" width="300" height="200" style="opacity: 1;">
 		</div>
 	</div>
 </div>
@@ -36,14 +60,14 @@
 	<div id="pr_contain_item_3627900"><a href="/#" onmouseover="this.className='hover';" onmouseout="this.className='nohover';" class="nohover" id="p3627900" rel="history" name="benmaurodesign" onfocus="this.blur()">
 		<div class="loader_holder " id="load_3627900"><img src="/_gfx/loadingAnim.gif" style="opacity: 1;"></div>
 	<div class="thumb_title notag"><span class="text">Picture02</span>&nbsp;</div></a></div>
-	<div class="cardimgcrop " name=""><img src="assets/thumbnail.jpg" border="0" rel="testprt_1380728430.jpg" width="320" height="200" style="opacity: 1;">
+	<div class="cardimgcrop " name=""><img src="assets/thumbnail.jpg" border="0" rel="testprt_1380728430.jpg" width="300" height="200" style="opacity: 1;">
 	</div>
 </div>
 <div class="project_thumb" spot="-1">
 	<div id="pr_contain_item_3627900"><a href="/#" onmouseover="this.className='hover';" onmouseout="this.className='nohover';" class="nohover" id="p3627900" rel="history" name="benmaurodesign" onfocus="this.blur()">
 		<div class="loader_holder " id="load_3627900"><img src="/_gfx/loadingAnim.gif" style="opacity: 1;"></div>
 	<div class="thumb_title notag"><span class="text">Picture03</span>&nbsp;</div></a></div>
-	<div class="cardimgcrop " name=""><img src="assets/thumbnail.jpg" border="0" rel="testprt_1380728430.jpg" width="320" height="200" style="opacity: 1;">
+	<div class="cardimgcrop " name=""><img src="assets/thumbnail.jpg" border="0" rel="testprt_1380728430.jpg" width="300" height="200" style="opacity: 1;">
 	</div>
 </div>
 <div id="content_container">
@@ -51,7 +75,7 @@
 		<div id="pr_contain_item_3627900"><a href="/#" onmouseover="this.className='hover';" onmouseout="this.className='nohover';" class="nohover" id="p3627900" rel="history" name="benmaurodesign" onfocus="this.blur()">
 			<div class="loader_holder " id="load_3627900"><img src="/_gfx/loadingAnim.gif" style="opacity: 1;"></div>
 		<div class="thumb_title notag"><span class="text">Picture04</span>&nbsp;</div></a></div>
-		<div class="cardimgcrop " name=""><img src="assets/thumbnail.jpg" border="0" rel="testprt_1380728430.jpg" width="320" height="200" style="opacity: 1;">
+		<div class="cardimgcrop " name=""><img src="assets/thumbnail.jpg" border="0" rel="testprt_1380728430.jpg" width="300" height="200" style="opacity: 1;">
 		</div>
 	</div>
 </div>
@@ -59,24 +83,16 @@
 	<div id="pr_contain_item_3627900"><a href="/#" onmouseover="this.className='hover';" onmouseout="this.className='nohover';" class="nohover" id="p3627900" rel="history" name="benmaurodesign" onfocus="this.blur()">
 		<div class="loader_holder " id="load_3627900"><img src="/_gfx/loadingAnim.gif" style="opacity: 1;"></div>
 	<div class="thumb_title notag"><span class="text">Picture05</span>&nbsp;</div></a></div>
-	<div class="cardimgcrop " name=""><img src="assets/thumbnail.jpg" border="0" rel="testprt_1380728430.jpg" width="320" height="200" style="opacity: 1;">
+	<div class="cardimgcrop " name=""><img src="assets/thumbnail.jpg" border="0" rel="testprt_1380728430.jpg" width="300" height="200" style="opacity: 1;">
 	</div>
 </div>
 <div class="project_thumb" spot="-1">
 	<div id="pr_contain_item_3627900"><a href="/#" onmouseover="this.className='hover';" onmouseout="this.className='nohover';" class="nohover" id="p3627900" rel="history" name="benmaurodesign" onfocus="this.blur()">
 		<div class="loader_holder " id="load_3627900"><img src="/_gfx/loadingAnim.gif" style="opacity: 1;"></div>
 	<div class="thumb_title notag"><span class="text">Picture06</span>&nbsp;</div></a></div>
-	<div class="cardimgcrop " name=""><img src="assets/thumbnail.jpg" border="0" rel="testprt_1380728430.jpg" width="320" height="200" style="opacity: 1;">
+	<div class="cardimgcrop " name=""><img src="assets/thumbnail.jpg" border="0" rel="testprt_1380728430.jpg" width="300" height="200" style="opacity: 1;">
 	</div>
 </div>
-
-<script src="jquery.js"></script>
-<script>
- 
-</script>
-
-</head>
-<body>
 
 </body>
 </html>
