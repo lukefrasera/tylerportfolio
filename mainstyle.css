@@ -15,7 +15,7 @@ body {
     height: 100%;
     line-height: 1.5;
     width: 100%;
-    min-width: 1100px;
+    min-width: 960px;
     margin: 0px;
     padding: 0px;
 }
@@ -140,7 +140,7 @@ body {
     margin-right: auto;
     padding: 35px 0 0 0px;
     position: relative;
-    width: 1000px;
+    width: 960px;
     z-index: 10;
 }
 
@@ -154,7 +154,7 @@ body {
     #maincontainer {
         display: none;
         margin: 0 0 35px 0;
-        width: 1000px;
+        width: 960px;
     }
     
     .bodycopy a { color: #000000; text-decoration: underline; }
@@ -163,7 +163,7 @@ body {
     
     .project_content {
         color: #555555;
-        width: 1000px;
+        width: 960px;
     }
     
     .project_title {
