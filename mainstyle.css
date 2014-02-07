@@ -453,7 +453,7 @@ body {
     .thumb_title {
         overflow: hidden;
         white-space:nowrap;
-        text-align: center;
+        text-align: left;
         /*width: 250px;*/
     }
 
